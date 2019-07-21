@@ -13,6 +13,7 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 .carousel-slide {
   display: block;
@@ -20,6 +21,12 @@ body {
   width: 400px;
   height: 400px;
   background-color: red;
+}
+.carousel-slide img {
+  display: block;
+  width: 360px;
+  height: 360px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=main.css.map */
