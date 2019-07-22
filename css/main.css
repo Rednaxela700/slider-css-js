@@ -15,7 +15,6 @@ body {
   width: 60%;
   margin: auto;
   overflow: hidden;
-  border: 5px solid #000;
 }
 .carousel-slide {
   display: flex;
@@ -30,6 +29,30 @@ body {
 .carousel-btn {
   position: absolute;
   top: 50%;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.carousel-btn:focus {
+  outline-width: 0;
+}
+.carousel-btn-arrow {
+  border: solid #000;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 1em;
+  opacity: 0.5;
+  will-change: opacity;
+  transition: opacity 0.4s ease-in-out;
+}
+.carousel-btn-arrow__left {
+  transform: rotate(130deg);
+}
+.carousel-btn-arrow__right {
+  transform: rotate(-45deg);
+}
+.carousel-btn-arrow:hover {
+  opacity: 1;
 }
 
 #carouselNextBtn {
