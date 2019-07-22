@@ -8,9 +8,13 @@ body {
   font-size: 16px;
 }
 
-.carousel-containergst {
+.carousel {
+  position: relative;
+}
+.carousel-container {
   width: 60%;
   margin: auto;
+  overflow: hidden;
   border: 5px solid #000;
 }
 .carousel-slide {
@@ -22,6 +26,18 @@ body {
   display: block;
   width: 100%;
   margin: 0;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+}
+
+#carouselNextBtn {
+  right: 5%;
+}
+
+#carouselPrevBtn {
+  left: 5%;
 }
 
 /*# sourceMappingURL=main.css.map */
